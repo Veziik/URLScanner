@@ -1,0 +1,55 @@
+README.txt
+-Look to the top of each category for the most recent entries.
+-entries starting with >> are the most recent developments within the program.
+
+
+---ADDED ITEMS---
+
+>>ADDED: the actual process of adding a webpage to the map
+
+>>ADDED: the new file structure of:
+	another folder in runasof: Problems By Department
+	folders in 404s By Department: C:/.../[Pattern name]
+	
+>>ADDED: method ProcessPatternMap for dynamically creating folders for each department 
+
+>>ADDED: Sloppy formay for placing 404 files in dynamically created folders
+
+>>ADDED: File structure for "Problems By Department Actually works now"
+
+>>ADDED: Modified Initialization of folders for more stable start up
+
+>>ADDED: Modified File structure for new "Problems by department" folder
+
+>>ADDED: All write methods now include some sort of functionality for printing the child's IP address
+
+>>ADDED: Webpage Object now stores IP address
+
+ADDED: TODO section at the bottom to keep track of incomplete tasks
+
+ADDED: Handful of unit tests that test the new method in addition to the constructor for Webpage[about time I started using them]
+
+ADDED: HashMap mapOfPathPatterns in SearchTool which sorts the Webpages by department 
+
+ADDED: new Method extractPathPattern which gives the first folder in a webpage's path
+
+ADDED: new method in Dataminer findWebpageOnParentThatRedirectsToChild returns the link that was used to connect to a redirected webpage.
+
+ADDED: new method in Dataminer writeWithoutTrace that uses the above method to print similar to regular write method, but replaces the status of the parent url with the URL used to reference the child.
+
+
+
+---FIXED ITEMS---
+FIXED: file structure functional again.
+
+FIXED: WriteSimple now only writes one line at a time per url object, still in format:
+Url, status, parent, child 1 , …. , child n.
+
+
+
+---PROBLEMS---
+>>none 
+
+
+---TODO---
+>>TODO Fix sloppy formay for placing 404 files in dynamically created folders
